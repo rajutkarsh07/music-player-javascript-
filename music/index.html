@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Music Site made with javascript" />
+    <title>Music Player | Utkarsh Raj</title>
+    <link rel="icon" href="img/music.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@300&family=Playfair+Display:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+      integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Music Player</h1>
+      <div class="main-content">
+        <div class="nowplaying">
+          <h2>Now Playing</h2>
+          <img
+            src="img/endoftime.jpg"
+            alt="End of time"
+            class="music-img"
+            id="music-img"
+          />
+
+          <div class="music-content">
+            <p class="music-name">End of Time</p>
+            <p class="music-artist">K-391, Alan Walker</p>
+          </div>
+
+          <div class="player">
+            <audio src="song/endoftime.mp3"></audio>
+            <i
+              class="fa-solid fa-backward-step"
+              id="previous"
+              title="previous"
+            ></i>
+            <div class="play-pause">
+              <i class="fa-solid fa-circle-play" id="play" title="play"></i>
+              <!-- <i class="fa-solid fa-circle-pause" id="pause" title="pause"></i> -->
+            </div>
+            <i class="fa-solid fa-forward-step" id="next" title="next"></i>
+          </div>
+        </div>
+        <div class="queue">
+          <div class="queue-head">
+            <p class="head">🎶 Queue</p>
+          </div>
+
+          <div class="music-list">
+            <div>
+              <i class="fa-solid fa-circle-play" id="play1" title="play"></i>
+
+              <div class="music-detail">
+                <p class="song-name">End of Time</p>
+                <p class="artist-name">K-391, Alan Walker</p>
+              </div>
+            </div>
+            <div>
+              <i class="fa-solid fa-circle-play" id="play2" title="play"></i>
+
+              <div class="music-detail">
+                <p class="song-name">All Falls Down</p>
+                <p class="artist-name">Alan Walker & Noah Cyrus</p>
+              </div>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-play" id="play3" title="play"></i>
+
+              <div class="music-detail">
+                <p class="song-name">Tired</p>
+                <p class="artist-name">Alan Walker ft. Gavin James</p>
+              </div>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-play" id="play4" title="play"></i>
+
+              <div class="music-detail">
+                <p class="song-name">Night Changes</p>
+                <p class="artist-name">One Direction</p>
+              </div>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-circle-play" id="play5" title="play"></i>
+
+              <div class="music-detail">
+                <p class="song-name">Steal My Girl</p>
+                <p class="artist-name">One Direction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>Designed & Built with ❤️ by Utkarsh Raj</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
